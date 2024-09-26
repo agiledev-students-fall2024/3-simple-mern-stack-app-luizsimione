@@ -78,5 +78,21 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+//a route to serve About data
+// app.get('/api/about', (req, res) => {
+//     res.json({
+//       title: "About Us",
+//       paragraph:["My name is Luiz", "I'm a senior hoping to work in web design"]
+//       //imageURl: // fill this in
+//     });
+//     });
+app.get('/about', async (req, res) => {
+  res.json({
+    title: "About Us",
+    paragraphs: ["My name is Luiz", "This was very confusing"]
+    //imageUrl: “h”
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
