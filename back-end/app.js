@@ -89,8 +89,8 @@ app.post('/messages/save', async (req, res) => {
 app.get('/about', async (req, res) => {
   res.json({
     title: "About Us",
-    paragraphs: ["My name is Luiz", "This was very confusing"]
-    //imageUrl: “h”
+    paragraphs: ["My name is Luiz", "This was very confusing"],
+    imageUrl: "https://github.com/agiledev-students-fall2024/3-simple-mern-stack-app-luizsimione/blob/master/56190008.jpeg"
   })
 })
 
